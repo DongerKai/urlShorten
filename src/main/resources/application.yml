@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: url-shorten
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 4399
+  tomcat:
+    basedir: ./tmp
